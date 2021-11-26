@@ -1,4 +1,4 @@
-package com.rishad.rest.restfulwebservices.controllers;
+package com.rishad.rest.restfulwebservices.helloworld;
 
 public class HelloWorld {
 
