@@ -1,9 +1,11 @@
 package com.rishad.rest.restfulwebservices.filtering;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import net.minidev.json.annotate.JsonIgnore;
 
 //@JsonIgnoreProperties(value = {"field1", "field2"})
+@JsonFilter("someBeanFilter")
 public class SomeBean {
     private String value1;
     private String value2;
