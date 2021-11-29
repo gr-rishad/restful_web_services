@@ -59,7 +59,7 @@ public class UserController extends CustomizeExceptionHandler {
     public ResponseEntity<Object> saveUser(@Valid @RequestBody User user) {
         User savedUser = userDaoService.save(user);
 
-
+        System.out.println(";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;");
         URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(savedUser.getId()).toUri();
 
         return ResponseEntity.created(location).build();
